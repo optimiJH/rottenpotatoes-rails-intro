@@ -59,3 +59,8 @@ form label {
   font-weight: bold;
   color: maroon;
 }
+
+/* PART 1 addition */
+table#movies th.hilite {
+  background-color: yellow;
+}
