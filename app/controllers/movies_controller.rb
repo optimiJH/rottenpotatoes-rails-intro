@@ -17,7 +17,7 @@ class MoviesController < ApplicationController
     logger.debug(session.inspect)
     
     if params[:sort_by]
-      @sort_by = [:sort_by]
+      @sort_by = params[:sort_by]
       session[:sort_by] = params[:sort_by]
     elsif session[:sort_by]
       @sort_by = session[:sort_by]
